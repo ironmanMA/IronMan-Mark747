@@ -1,0 +1,219 @@
+@font-face {
+	font-family: 'SecretTypewriterRegular';
+	src: url('../fonts/veteran_typewriter-webfont.eot');
+	src: local('☺'), url('../fonts/veteran_typewriter-webfont.woff') format('woff'), url('../fonts/veteran_typewriter-webfont.ttf') format('truetype'), url('../fonts/veteran_typewriter-webfont.svg#webfont4SuloFzB') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.mod:after,
+div#jumboLiteracy #widgetLiteracy li:after { 
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden; 
+}
+
+div#jumboLiteracy {
+  background: #495a60 url(bg-literacy.jpg) repeat 0 0;
+  margin: 30px 0;
+  padding: 0;
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #2d383b;
+}
+  
+div#jumboLiteracy h1 {
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0,0,0,.5) !important;
+  font-family: 'SecretTypewriterRegular' !important;
+  font-size: 70px !important;
+  margin: 0 0 10px 0 !important;
+}
+  
+div#jumboLiteracy .description p {
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0,0,0,.5) !important;
+  color: rgba(255,255,255,.85);
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 1.33em;
+}
+
+div#jumboLiteracy div.container {
+  position: relative;
+  background: url(bg-book.jpg) 50% bottom no-repeat;
+  
+}
+
+div#jumboLiteracy h1 {
+  font-weight: 100;
+  margin: 0 0 30px 0;
+  font-size: 80px;
+}
+
+div#jumboLiteracy .jumboLeft {
+  margin: 0 48px 0 0;
+  width: 591px;
+  float: left;
+  padding: 30px 0;  
+}
+  
+div#jumboLiteracy .widgetContainer {
+  width: 290px;
+  float: left;
+  margin-top: 30px;
+}  
+  
+div#jumboLiteracy .widgetContainer h2 {
+  font-size: 22px;
+  margin: 0 0 10px 0;
+  letter-spacing: -1px;
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0,0,0,.5);
+}  
+
+div#jumboLiteracy .widgetContainer p.subhead {
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0,0,0,.5) !important;
+  color: rgba(255,255,255,.65);
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.5em; 
+}
+
+div#jumboLiteracy #widgetLiteracy {
+  background:#d3eaec;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	margin: 20px 0 0 0;
+	clear: both;
+}
+div#jumboLiteracy #widgetLiteracy p {
+  color: #43565e;
+}
+
+div#jumboLiteracy #widgetLiteracy .widgetButton {
+  background: #3787a8;
+  color: #fff;
+  padding: 3px 10px;
+  text-align: center;
+  font-size: 13px;
+  margin: 10px 0 0 0;
+  line-height: 16px;
+  display: block;
+  font-weight: normal;
+  float: left;
+}
+
+div#jumboLiteracy #widgetLiteracy li {
+  padding: 15px;
+  background: url(../images/literacy-day/bg-widget-li.png) repeat-x bottom;
+}
+
+div#jumboLiteracy #widgetLiteracy li.last {
+  background: none;
+}
+
+div#jumboLiteracy #widgetLiteracy li p {
+  display: block;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5em;
+} 
+
+div#jumboLiteracy #widgetLiteracy li p a {
+  font-weight: bold;
+}
+
+div#jumboLiteracy #widgetLiteracy li p a.nextLink {
+  font-weight: normal;
+  font-size: 13px;
+  float: right;
+  display: block;
+  margin-top: 15px;
+}
+  
+.literacy.well {
+  margin-top: 15px;
+}
+
+.literacy.well h5 {
+  margin-bottom: 10px;
+}
+
+
+
+/*
+#actionsLiteracy .columns.left {
+  margin-right: 48px;
+}
+  
+#actionsLiteracy .columns {
+  width: 289px;
+  float: left;
+}
+*/
+
+#actionsLiteracy .columns h3 {
+  font-size: 22px;
+  letter-spacing: -1px;
+}
+
+#actionsLiteracy {
+  margin-left: -50px;
+  width: 990px;
+}
+#actionsLiteracy div.five {
+  margin-left: 50px;
+}
+#actionsLiteracy p {
+  font-size: 14px;
+  line-height: 20px;
+}
+#actionsLiteracy p.subhead {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+  
+/*
+#actionsLiteracy .columns p {
+  font-size: 13px;
+  line-height: 1.5em;
+  margin-bottom: 10px;
+}
+*/
+
+#actionsLiteracy .twtr-widget p {
+  font-size: 13px !important;
+  line-height: 1.33em !important;
+}
+  
+#actionsLiteracy #twtr-widget-1 .twtr-avatar {
+  margin-top: 5px;
+}
+
+
+
+
+
+#actionsLiteracy span.indented {
+  margin-left: 80px;
+  display: block;
+}
+
+#actionsLiteracy .actionPhoto {
+  width: 60px;
+  border: 7px solid #fff;
+}
+
+#actionsLiteracy .left .actionPhoto {
+  margin-top: 0;
+}
+
+#actionsLiteracy .btn-yellow {
+  text-align: center;
+  margin: 20px 0 20px 0;
+  display: block;
+  padding: 5px;
+}

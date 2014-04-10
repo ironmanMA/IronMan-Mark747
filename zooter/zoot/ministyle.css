@@ -1,0 +1,174 @@
+.like_shower{
+	background-color: rgba(0,0,0,0.8);
+	position: absolute;
+	height: auto;
+	width: auto;
+	top: 0px;
+	left: 0px;
+
+	font-family: "verdana";
+	font-size: 12px;
+	color: white;
+	text-align: left;
+
+	padding: 7px;
+	border-radius: 5px;
+	z-index: 33339;
+	display: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+.login_wrapper{
+	height:100px;
+	width: 150px;
+	position: absolute;
+	top: 100px;
+	left: 200px;
+	border-radius: 20px;
+	background: rgba(226,226,226,0.3);
+
+}
+
+.login_info{
+	position: relative;
+	height: 30px;
+	width: 70%;
+	line-height: 30px;
+	text-align: center;
+	font-family: 'verdana';
+	font-size: 25px;
+	top: -30px;
+	margin: auto;
+	background-color: rgb(255,0,0);
+	color: white;
+}
+
+.reqpass{
+	height: 20px;
+	width: 150px;
+	background-color: rgb(139,139,139);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+.repasstext{
+	height: inherit;
+	width: 100%;
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+	font-size: 25px;
+	line-height: 30px;
+	text-align: center;
+}
+
+.logger_out{
+	display: none;
+	height:50px;
+	width: 100px;
+	position: absolute;
+	right: 0px;
+	border-radius: 20px;
+	background: rgb(226,226,226);
+}
+
+.logout_button{
+	height: 20px;
+	width: 70%;
+	margin: 15px auto;
+	border-radius: 15px;
+	text-align: center;
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+	background-color: rgb(187,187,187);
+	cursor: pointer;
+}
+
+.username_login{
+	overflow: hidden;
+	height: 25px;
+	width: 100%;
+	color: rgb(0,0,0);
+	background: rgba(255,255,255,0);
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+	padding: 3px 0 0 5px;
+	/*border: solid #b4bbcd 1px;*/
+	margin: 5px;
+	border: none;
+	outline: none;
+	resize: none;
+}
+
+.password_login{
+	overflow: hidden;
+	height: 25px;
+	width: 100%;
+	color: rgb(0,0,0);
+	background: rgba(255,255,255,0);
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+	padding: 3px 0 0 5px;
+	/*border: solid #b4bbcd 1px;*/
+	margin: 5px;
+	border: none;
+	outline: none;
+	resize: none;
+}
+
+.login_button{
+	height: 20px;
+	width: 50%;
+	margin: auto;
+	border-radius: 15px;
+	text-align: center;
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+	background-color: rgba(187,187,187,0.4);
+	cursor: pointer;
+}
+
+.iith-map{
+	height: 56px;
+	width: 70px;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	border-radius: 40px;
+	z-index: 100;
+	/*display: none;*/
+}
+
+/*.iith-map-img{
+	position: absolute;
+	height: 70px;
+	width: 70px;
+	bottom: 0px;
+	z-index: -1;
+}*/
+
+.iith-map-button{
+	position: absolute;
+	height: 56px;
+	width: 70px;
+	line-height: 28px;
+	border-radius: 40px;
+	color: black;
+	text-align: center;
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+	color: white;
+	font-weight: bold;
+	z-index: 111;
+
+	bottom: 0px;
+	left: 0px;
+}
+
+.map-canvas{
+	height:56px; 
+	width:70px; 
+	z-index:100;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}

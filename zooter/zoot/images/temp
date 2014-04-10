@@ -1,0 +1,25 @@
+if($code=110){
+	if(!isset($_SESSION['master'])|| $_SESSION['master']==''){
+		echo '{"code":110,"success":300}';
+		return;
+	}
+	$uid=$_SESSION['master'];
+	if(!isset($_GET['post_id'])){
+		echo '{"code":110,"success":100}';
+		return;
+	}
+	$post_id=$_GET['post_id'];
+	$result=mysql_query("select user_info.fname,user_info.lname from user_info,votes where votes.uid=user_info.uid and votes.post_id='$post_id';");
+	$out='{"code":110,"success":200,"users":[';
+	for($i=0;$i<mysql_num_rows($result);$i++){
+		$row=mysql_fetch_row($result);
+		$out+='"'.$row[0].' '.$row[1].'",';
+	}
+	if(substr($out, -1)==","){
+		$out=substr($out,0,-1);
+	}
+	$out.=']}';
+	echo $out;
+	return;
+	
+}

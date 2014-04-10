@@ -1,0 +1,11 @@
+- The gear icon looks out of place
+- Notification marker doesn't show the right number
+- Top Stories algo has to be developed.
+- Recent Stories disappear after clicking on top stories and going back
+- Like and comment buttons don't work at times (Not sure if because of slow internet or not)
+- 'Loading' text needs to be changed
+- Markers should not appear before the model does. They should appear together
+- 'Liked by' box interferes with the user's ability to click like
+- Comments should disappear on clicking the comments button
+- Green line in center - Don't know what is the purpose of that
+- We can add some real terrain rather than the grid now.

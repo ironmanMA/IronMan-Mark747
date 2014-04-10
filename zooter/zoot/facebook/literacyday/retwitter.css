@@ -1,0 +1,425 @@
+/*
+	
+	ReTwitter.css
+	==================================================
+	A basic restyling of key elements for Twitter.com 
+	to make this shit hot, son. This CSS builds off of 
+	the default twitter.css, a compiled stylesheet.
+	
+*/	
+
+body {
+	background: #C0DEED url('../images/bg-clouds.png') repeat-x 0 40px;
+	font-family: "Helvetica Neue", sans-serif;
+	color: #333;
+}
+
+div.dev-bar {
+  background: url(../assets/dev-bar.png) repeat-x 0 center;
+  width: 100%;
+  height: 10px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,.25);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.25);
+}
+
+@-webkit-keyframes devbar {
+  0% { background-position: 0 center; }
+  50% { background-position: 2000px center; }
+  100% { background-position: 0 center; }
+}
+div.dev-bar {
+	x-webkit-animation-name: devbar;
+	-webkit-animation-duration: 240s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+div.body-wrap {
+	background: url(../assets/dirty-gradient-5000.png) repeat-x;
+	min-height: 1000px;
+	padding: 40px 0 40px;
+}
+
+div#header, div#container, div.container {
+	width: 940px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+/* Moving Larry Bird */
+@-webkit-keyframes groovingBird {
+  0% { position: relative; top: 1px; left: 1px; }
+  50% { position: relative; top: 2px; left: 2px; }
+  100% { position: relative; top: 1px; left: 1px; }
+}
+img#larryBird {
+  float: right;
+  -webkit-transform: scale(-1, 1);
+  position: relative;
+  top: 0;
+  left: 0;
+	-webkit-animation-name: groovingBird;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+
+
+div#header {
+	padding: 20px 0;
+}
+div#header a.logo {
+	display: block;
+	height: 39px;
+	line-height: 39px;
+}
+div#header a.logo img {
+	margin: 0 2px 0 -2px !important;
+	float: left;
+}
+div#header a.logo span {
+	font: 100 30px/1 "Gotham Rounded", sans-serif !important;
+	color: #fff;
+	text-shadow: 0 1px 2px rgba(0,0,0,.3);
+	position: relative;
+	top: 11px;
+}
+div#header a.logo:hover {
+	text-decoration: none;
+}
+
+ul#mainNav { float: right; margin: 10px 0 0; }
+ul#mainNav li { display: inline; }
+ul#mainNav li a { display: inline; float: left; color: #fff; line-height: 1; padding: 5px 12px; -moz-border-radius: 12px; -webkit-border-radius: 12px; text-shadow: 0 1px 1px rgba(0,0,0,.1); font-weight: ; font-size: 13px; -webkit-transition: all linear .2s; }
+ul#mainNav li a:hover { text-decoration: none; text-shadow: 0 0 15px rgba(255,255,255,1); }
+ul#mainNav li.active a, ul#mainNav li.active a:hover { background: rgba(0,0,0,.5); -webkit-box-shadow: 0 1px 1px rgba(255,255,255,.5); text-shadow: 0 1px 1px rgba(0,0,0,.1); }
+
+div#sandboxBar {
+  background: #222;
+	background: rgba(0,0,0,.75);
+	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	position: fixed;
+	top: 10px;
+	left: 0;
+	z-index: 9999;
+	width: 100%;
+}
+div#sandboxBar div.wrapper {
+	padding: 0 10px;
+}
+div#sandboxBar h4 {
+	float: left;
+	font: 100 15px/30px "Gotham Rounded", sans-serif !important;
+	color: #fff;
+	text-shadow: 0 1px 2px rgba(0,0,0,.3);
+	margin-right: 10px;
+}
+div#sandboxBar h4 a {
+  color: #fff
+}
+div#sandboxBar ul {
+	float: left;
+}
+div#sandboxBar li {
+	display: inline;
+	line-height: 1;
+}
+div#sandboxBar li a {
+	display: inline;
+	float: left;
+	padding: 3px 10px;
+	margin: 5px 0 0;
+	border-radius:10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	color: #999;
+}
+div#sandboxBar .current a {
+	background: rgba(0,0,0,.4);
+	color: #fff;
+	-moz-box-shadow: 0 1px 1px rgba(255,255,255,.15);
+	-webkit-box-shadow: 0 1px 1px rgba(255,255,255,.15);
+	border-top: 1px solid rgba(0,0,0,.65);
+	padding-top: 2px;
+}
+
+div#container, div.container {
+	background: #fff;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.25);
+}
+div.full-container {
+	width: 880px;
+	padding: 30px;
+}
+
+p.lead {
+	margin-bottom: 15px;
+	font-size: 18px;
+	line-height: 25px;
+	font-weight: 300;
+	color: rgba(0,0,0,.5);
+}
+
+ul.twullets.contents {
+	margin: 5px 0 15px;
+	border-bottom: 1px solid rgba(0,0,0,.075);
+}
+ul.twullets.contents li a {
+	display: block;
+	background: url(../assets/twullet.gif) no-repeat 4px 5px;
+	margin: 0;
+	padding-left: 24px;
+	line-height: 24px;
+	border-top: 1px solid rgba(0,0,0,.075);
+}
+
+
+
+/* Misc classes */
+span.mute {
+	color: #999;
+}
+.btn:hover {
+	text-decoration: none !important;
+}
+p.cta {
+  
+}
+img {
+	display: block;
+	margin-bottom: 15px;
+}
+div.twivider {
+	background: url(../assets/twivider.png) no-repeat top center;
+	width: 100%;
+	height: 30px;
+	margin: 30px 0;
+}
+a.twuser span {
+	color: #999;
+}
+
+
+
+/* State Controller */
+div.states {
+	background: rgba(0,0,0,.8);
+	position: fixed;
+	bottom: 10px;
+	left: 10px;
+	z-index: 9999;
+	width: auto;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.5);
+	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5);
+}
+div.states ul {
+	margin: 0;
+	padding: 0 10px;
+	overflow: hidden;
+	width: 554px;
+	height: 40px;
+}
+div.states li {
+	display: inline;
+}
+div.states li.label {
+	float: left;
+	padding: 12px 10px 9px 5px;
+	font-weight: bold;
+	color: #fff;
+}
+div.states li a {
+	display: inline;
+	float: left;
+	padding: 3px 10px;
+	margin: 10px 0 0;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	color: #999;
+}
+div.states li a:hover {
+	text-decoration: none;
+}
+div.states li.current a {
+	background: #bf2726;
+	color: #fff;
+/*	-moz-box-shadow: 0 1px 1px rgba(255,255,255,.15);
+	-webkit-box-shadow: 0 1px 1px rgba(255,255,255,.15);
+	border-top: 1px solid rgba(0,0,0,.65);
+	padding-top: 2px;*/
+}
+
+
+/* Redo the columns with divs, not tables, motha trucka! */
+div#contentWrapper {
+	overflow: hidden;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+div#contentWrapper div#contentMain {
+	float: left;
+	width: 520px;
+	padding: 20px 19px 20px 20px;
+}
+div#contentWrapper div#contentSec {
+	float: left;
+	width: 170px;
+	padding: 15px 15px 5000px;
+	margin-bottom: -5000px;
+	background: #ddeef6;
+	border-left: 1px solid rgb(192,222,237);
+}
+
+/* Baseline columns */
+div.row { margin-left: -20px; }
+div.row div.column, div.row div.columns {
+	display: inline;
+	float: left;
+	margin: 0;
+}
+div.row div.column, div.row div.columns {
+  margin-left: 20px;
+}
+div.row div.one { width: 40px; }
+div.row div.two { width: 100px; }
+div.row div.three { width: 160px; }
+div.row div.four { width: 220px; }
+div.row div.five { width: 280px; }
+div.row div.six { width: 340px; }
+div.row div.seven { width: 400px; }
+div.row div.eight { width: 460px; }
+div.row div.nine { width: 520px; }
+div.row div.ten { width: 580px; }
+div.row div.eleven { width: 640px; }
+div.row div.twelve { width: 700px; }
+div.row div.thirteen { width: 760px; }
+div.row div.fourteen { width: 820px; }
+div.row div.fifteen { width: 880px; }
+div.row div.sixteen { width: 940px; }
+div.row div.one-fourth { width: 205px; }
+div.row div.one-third { width: 300px; }
+
+body.ie6 div.row { width: 960px; }
+
+/* Tweet Box */
+form#tweet {
+	margin: 0 0 20px;
+	padding: 0;
+	position: relative;
+}
+form#tweet span.counter {
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	display: block;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 2px 5px 4px;
+	color: #ccc;
+	background: #f5f5f5;
+	-moz-border-top-right-radius: 3px;
+	-moz-border-top-right-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+}
+form#tweet textarea {
+	display: block;
+	width: 485px;
+	height: 40px;
+	margin: 0 0 9px;
+	padding: 4px 29px 4px 4px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-webkit-transition: all .25s linear;
+	font-size: 14px;
+	line-height: 18px;
+}
+form#tweet textarea:focus {
+	outline: none;
+	border: 1px solid rgba(34,118,187,.75);
+	-moz-box-shadow: 0 0 5px rgba(34,118,187,.5);
+	-webkit-box-shadow: 0 0 5px rgba(34,118,187,.5);
+}
+form#tweet button {
+	float: right;
+}
+form#tweet p {
+	margin-right: 160px;
+	font-size: 11px;
+	line-height: 15px;
+}
+
+
+/* Page Header */
+div.page-header {
+	margin: 0 0 10px;
+}
+div.page-header h1 {
+	font-size: 20px;
+	font-weight: normal;
+}
+div.page-header p {
+	color: #555;
+}
+
+
+/* Bottom of form actions */
+div.actions {
+  background: #ddeef6;
+  display: block;
+  margin: 30px -20px -20px;
+  padding: 20px;
+  line-height: 30px;
+  text-align: center;
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+}
+div.actions a.cancel {
+  color: rgba(0,0,0,.5);
+  line-height: 33px !important
+  padding: 1px 0 0;
+  margin-left: 10px
+}
+div.large.actions { line-height: 33px; }
+div.actions .btn:hover {
+  text-decoration: none;
+}
+div.help-actions { background: #eaf3f9; text-align: left; padding: 15px; }
+div.help-actions p { opacity: .75; }
+
+
+
+/* Redesign Inputs and Textareas */
+input[type=text],
+textarea {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+input[type=text], input[type=password], select, textarea {
+  border: 1px solid #aaa;
+  transition: border linear .2s, box-shadow linear .2s;
+  -moz-transition: border linear .2s, -moz-box-shadow linear .2s;
+  -webkit-transition: border linear .2s, -webkit-box-shadow linear .2s;
+}
+
+input[type=text]:focus, input[type=password]:focus, textarea:focus {
+  outline: none;
+  border-color: rgba(82,168,236,.75) !important;
+  box-shadow: 0 0 8px rgba(82,168,236,.5); 
+  -moz-box-shadow: 0 0 8px rgba(82,168,236,.5); 
+  -webkit-box-shadow: 0 0 8px rgba(82,168,236,.5); 
+}
+
+
